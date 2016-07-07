@@ -1,0 +1,2 @@
+import './public-body.html';
+
