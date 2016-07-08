@@ -5,12 +5,9 @@
     {{> loadDialog}}
   <!-- Display content whether the user has logged in or not -->
   {{else}}
-    <!-- User has logged in -->
     {{#if canShow}}
-      {{> Template.dynamic template=top}}
-      {{> Template.dynamic template=main}}
-      {{> content}}
-    <!-- User hasn't logged in -->
+      <!-- Help choose what content we will load -->
+      {{> Template.dynamic template=content}}
     {{else}}
       {{> login}}
     {{/if}}
@@ -33,22 +30,19 @@
 </template>
 
 <!-- User interface if logged in -->
-<template name="content">    
+<template name="dash">    
   <head>
       <title>tl;dr</title>
       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   </head>
   <body id="top">
+    <a href="/settings" class="btn btn-default">Settings</a>
     {{> atNavButton}}
   </body>
 </template>
 
-<!-- Demonstration of BlazeLayout loader -->
-<template name="header">
-  <h1>You logged in!</h1>
-</template>
-
-<template name="articles">
-  <h2>This is the articles area</h2>
-  <p>Some sample text...</p>
+<!-- Settings template -->
+<template name="settings">
+  <a href="/" class="btn btn-default">Home</a>
+  <p>This is settings...</p>
 </template>
