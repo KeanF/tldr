@@ -10,3 +10,18 @@ body {
     color: #666666;
     background-color: #FFFFFF;
 }
+
+/* Formatting our page loading dialog */
+.loading {
+  position: absolute;
+  text-align: center;
+  font-size: 100px;
+  /* Set size of our text */
+  width: 480px;
+  height: 150px;
+  /* Center text on page */
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -240px;
+}

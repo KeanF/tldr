@@ -1,6 +1,7 @@
 accounts-base@1.2.8
 accounts-password@1.1.11
 allow-deny@1.0.5
+anonyfox:scrape@0.0.10
 autopublish@1.0.7
 autoupdate@1.2.10
 babel-compiler@6.8.3
@@ -23,12 +24,14 @@ ddp-rate-limiter@1.0.5
 ddp-server@1.2.8_1
 deps@1.0.12
 diff-sequence@1.0.6
+digilord:sugarjs@1.4.1
 ecmascript@0.4.6_1
 ecmascript-runtime@0.2.11_1
 ejson@1.0.12
 email@1.0.14_1
 es5-shim@4.5.12_1
 fastclick@1.0.12
+froatsnook:request@2.53.3
 geojson-utils@1.0.9
 hot-code-push@1.0.4
 html-tools@1.0.10
@@ -55,6 +58,7 @@ modules@0.6.4
 modules-runtime@0.6.4_1
 mongo@1.1.9_1
 mongo-id@1.0.5
+nefiltari:yaki@0.1.81
 npm-bcrypt@0.8.7
 npm-mongo@1.4.44_1
 observe-sequence@1.0.12
@@ -86,3 +90,4 @@ useraccounts:bootstrap@1.14.2
 useraccounts:core@1.14.2
 webapp@1.2.9_1
 webapp-hashing@1.0.9
+wizonesolutions:underscore-string@1.0.0

@@ -1,43 +1,38 @@
+<!-- Container for whether the user has signed in or not -->
 <template name="dashboard">
+  <!-- Show "loading" logging-in -->
   {{#if authInProcess}}
-    {{> loading}}
+    {{> loadDialog}}
+  <!-- Display content whether the user has logged in or not -->
   {{else}}
+    <!-- User has logged in -->
     {{#if canShow}}
       {{> Template.dynamic template=top}}
       {{> Template.dynamic template=main}}
       {{> content}}
+    <!-- User hasn't logged in -->
     {{else}}
       {{> login}}
     {{/if}}
   {{/if}}
 </template>
 
-<template name="loading">
-  <h1 style="text-align: center; font-size:150px; font-family: Georgia;">
-    <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
-  </h1>
-  <p style="text-align: center;">Loading...</p>
+<!-- Template for loading page -->
+<template name="loadDialog">
+  <div class="loading">Loading...</div>
 </template>
 
+<!-- Template for login page -->
 <template name="login">
     <h1 style="text-align: center; font-size:150px; font-family: Georgia;">
         <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
     </h1>
-    <div>
+    <div class="container">
         {{> atForm}}
     </div>
 </template>
 
-<template name="header">
-  <h1>You logged in!</h1>
-</template>
-
-<template name="articles">
-  <h2>This is the articles area</h2>
-  <p>Some sample text...</p>
-</template>
-
-<!-- Main HTML -->
+<!-- User interface if logged in -->
 <template name="content">    
   <head>
       <title>tl;dr</title>
@@ -46,4 +41,14 @@
   <body id="top">
     {{> atNavButton}}
   </body>
+</template>
+
+<!-- Demonstration of BlazeLayout loader -->
+<template name="header">
+  <h1>You logged in!</h1>
+</template>
+
+<template name="articles">
+  <h2>This is the articles area</h2>
+  <p>Some sample text...</p>
 </template>
