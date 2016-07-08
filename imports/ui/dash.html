@@ -1,0 +1,49 @@
+<template name="dashboard">
+  {{#if authInProcess}}
+    {{> loading}}
+  {{else}}
+    {{#if canShow}}
+      {{> Template.dynamic template=top}}
+      {{> Template.dynamic template=main}}
+      {{> content}}
+    {{else}}
+      {{> login}}
+    {{/if}}
+  {{/if}}
+</template>
+
+<template name="loading">
+  <h1 style="text-align: center; font-size:150px; font-family: Georgia;">
+    <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
+  </h1>
+  <p style="text-align: center;">Loading...</p>
+</template>
+
+<template name="login">
+    <h1 style="text-align: center; font-size:150px; font-family: Georgia;">
+        <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
+    </h1>
+    <div>
+        {{> atForm}}
+    </div>
+</template>
+
+<template name="header">
+  <h1>You logged in!</h1>
+</template>
+
+<template name="articles">
+  <h2>This is the articles area</h2>
+  <p>Some sample text...</p>
+</template>
+
+<!-- Main HTML -->
+<template name="content">    
+  <head>
+      <title>tl;dr</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  </head>
+  <body id="top">
+    {{> atNavButton}}
+  </body>
+</template>
