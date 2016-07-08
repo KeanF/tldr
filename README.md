@@ -16,9 +16,9 @@ Kean Finucane & Samuel Scimemi
 
 ## screen tips
 - List screens:
-1. `screen -ls`
-2. The `XXXX` in **XXXX**.something will be the $screen_num
+	1. `screen -ls`
+	2. The `XXXX` in **XXXX**.something will be the $screen_num
 - Kill screen: 
-1. `screen -X -S $screen_num kill`
+	1. `screen -X -S $screen_num kill`
 - Reattach to screen:
-1. `screen -r $screen_num`
+	1. `screen -r $screen_num`

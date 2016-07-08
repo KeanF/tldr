@@ -4,6 +4,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout'
 // Include approrpiate routing information to the UI
 import '/imports/ui/public-body.js';
 import '/imports/ui/user-body.js';
+// import '/imports/pages/pages.js'
 
 /**
  * Routing users whether they're logged in or not
@@ -14,13 +15,31 @@ FlowRouter.route('/', {
         Tracker.autorun(function() {
             if (!Meteor.userId()) {
                 console.log("User is logged out.");
-                console.log(Meteor.user());
                 BlazeLayout.render("login", {});
             } else {
                 // Load something else if the user is logged in
+                console.log("User is logged in.");
+                console.log(Meteor.user());
                 BlazeLayout.render("dashboard", { top: 'header', main: 'articles' });
             }
         });
     },
     name: (!Meteor.userId() ? 'welcome' : 'dashboard')
+});
+
+// Load our pages
+FlowRouter.route('/pages/:_id', {
+    action: function (params) {
+        if (!Meteor.userId()) {
+            console.log("Oh hey it's pages!");
+            if (params._id === "full-width") {
+                BlazeLayout.render("fullWidth", {});
+            } else if (params._id === "style-demo") {
+                BlazeLayout.render("styleDemo", {});
+            }
+        } else {
+            console.log("User is logged out...");
+        }
+    },
+    name: "test"
 });
