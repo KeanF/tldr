@@ -12,47 +12,43 @@
       <table class="managetable">
         <tr>
           <th>RSS Feed</th>
-          <th>Add/Delete</th>
+          <th>Toggle Visibility</th>
         </tr>
         <tr>
           <td>Washington Post Politics</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="washPoliticsButton">Show/Hide</button>
         </tr>
         <tr>
           <td>Washington Post Opinions</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="washOpinionsButton">Show/Hide</button>
         </tr>
         <tr>
           <td>Washington Post Sports</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="washSportsButton">Show/Hide</button>
         </tr>
         <tr>
           <td>Washington Post World</td>
-          <td>Insert Button Here</td>
-        </tr>
-        <tr>
-          <td>New York Times Business</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="washWorldButton">Show/Hide</button>
         </tr>
         <tr>
           <td>New York Times Technology</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="timesTechButton">Show/Hide</button>
         </tr>
         <tr>
           <td>New York Times World</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="timesWorldButton">Show/Hide</button>
         </tr>
         <tr>
           <td>Wall Street Journal Opinion</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="streetOpinionButton">Show/Hide</button>
         </tr>
         <tr>
           <td>Wall Street Journal World</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="streetWorldButton">Show/Hide</button>
         </tr>
         <tr>
           <td>Wall Street Journal Technology</td>
-          <td>Insert Button Here</td>
+          <button type="button" id="streetTechButton">Show/Hide</button>
         </tr>
       </table>
       <li>
@@ -86,52 +82,51 @@
       </div>
       <!-- Show each of the feeds in their own divs
         (to toggle their appearance) -->
-      <div class="washPolitics">
+      <span id="washPolitics">
         <div class="feedgrabbr_widget" id="fgid_2e71a589b9ae2156f2abc734e"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_2e71a589b9ae2156f2abc734e");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="washOpinions">
+      </span>
+      <span id="washOpinions">
         <div class="feedgrabbr_widget" id="fgid_9e719a58c608db07277b8781d"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_9e719a58c608db07277b8781d");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="washOpinions">
+      </span>
+      <span id="washSports">
         <div class="feedgrabbr_widget" id="fgid_7421ba06ab206999fae8e1ea3"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_7421ba06ab206999fae8e1ea3");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="washWorld">
+      </span>
+      <span id="washWorld">
         <div class="feedgrabbr_widget" id="fgid_23f151495a14e6fd313cc311e"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_23f151495a14e6fd313cc311e");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="timesTech">
+      </span>
+      <span id="timesTech">
         <div class="feedgrabbr_widget" id="fgid_ba65ef2c4191d0a9d194eea50"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_ba65ef2c4191d0a9d194eea50");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="timesWorld">
+      </span>
+      <span id="timesWorld">
         <div class="feedgrabbr_widget" id="fgid_594884eae92eed7e7bf8d80cf"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_594884eae92eed7e7bf8d80cf");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="streetOpinion">
+      </span>
+      <span id="streetOpinion">
         <div class="feedgrabbr_widget" id="fgid_c25c1d8a72cdb20e7154933f4"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_c25c1d8a72cdb20e7154933f4");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="streetWorld">
+      </span>
+      <span id="streetWorld">
         <div class="feedgrabbr_widget" id="fgid_8a619ab58fb362b21464dcd76"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_8a619ab58fb362b21464dcd76");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-      </div>
-      <div class="streetTech">
+      </span>
+      <span id="streetTech">
         <div class="feedgrabbr_widget" id="fgid_6361bdc651373304308afcedb"></div>
         <script> if (typeof(fg_widgets)==="undefined") fg_widgets = new Array();fg_widgets.push("fgid_6361bdc651373304308afcedb");</script>
         <script src="http://www.feedgrabbr.com/widget/fgwidget.js"></script>
-
-      </div>
+      </span>
     </div><!-- /.container -->
   </div>
 

@@ -91,6 +91,11 @@ div > .navmenu {
   padding: 50px 0 0 0;
   background: #fff;
 }
+#washPolitics, #washOpinions, #washSports, #washWorld, #timesTech, #timesWorld, #streetOpinion, #streetWorld, #streetTech {
+  position: relative;
+  clear: both;
+  display: inline-block;
+}
 
 /* Formatting our page loading dialog */
 .loading {

@@ -7,6 +7,38 @@ import './user.html';
 
 // Helper functions for deleteUser
 if (Meteor.isClient) {
+  // Helper functions for button clicks
+  Template.userdash.events({
+    'click #washPoliticsButton' : function (event, template) {
+      template.$("#washPolitics").toggle();
+    },
+    'click #washOpinionsButton' : function (event, template) {
+      template.$("#washOpinions").toggle();
+    },
+    'click #washSportsButton' : function (event, template) {
+      template.$("#washSports").toggle();
+    },
+    'click #washWorldButton' : function (event, template) {
+      template.$("#washWorld").toggle();
+    },
+    'click #timesTechButton' : function (event, template) {
+      template.$("#timesTech").toggle();
+    },
+    'click #timesWorldButton' : function (event, template) {
+      template.$("#timesWorld").toggle();
+    },
+    'click #streetOpinionButton' : function (event, template) {
+      template.$("#streetOpinion").toggle();
+    },
+    'click #streetWorldButton' : function (event, template) {
+      template.$("#streetWorld").toggle();
+    },
+    'click #streetTechButton' : function (event, template) {
+      template.$("#streetTech").toggle();
+    }
+  });
+
+  // Helper function for deleting accounts
   Template.deleteAcc.events = {
     // Register click-button event only (safety!)
     'click input[type=button]' : function () {
@@ -26,6 +58,7 @@ if (Meteor.isClient) {
     }
   };
 }
+
 
 // Helper functions for template=dashboard
 Template.dashboard.helpers({
