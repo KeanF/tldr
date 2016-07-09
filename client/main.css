@@ -11,6 +11,18 @@ body {
     background-color: #FFFFFF;
 }
 
+/* NavBar settings */
+
+/* Toggle button for our settings panel */
+.navbar-toggle {
+  display: block; /* Make sure button is leftmost and has right margins */
+  float: left;
+  margin: 8px;
+}
+.navbar-collapse.collapse {
+  display: none !important; /* Make sure button always shows */
+}
+
 /* Formatting our page loading dialog */
 .loading {
   position: absolute;
@@ -40,7 +52,7 @@ body {
   left: 50%;
   margin-top: 80px;
   margin-left: -180px;
-  
+
 }
 .nfDialog {
   position: absolute;
