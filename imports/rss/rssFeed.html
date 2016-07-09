@@ -1,5 +1,17 @@
 <template name="rssFeed">
-  <p>
+  <h1>
     Hello World!
+  </h1>
+  <h3>
+    We're going to try to scrape Scott Adam's <a href="http://feed.dilbert.com/dilbert/blog?format=xml">blog</a>.
+  </h3>
+  <p>
+    The results will be displayed below:
+    {{> passData}}
   </p>
+</template>
+
+<template name="passData">
+  <h1>Passing data to server method...</h1>
+  <span>Feed: </span><input type="text" value="">
 </template>

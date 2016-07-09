@@ -6,3 +6,8 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './rssFeed.html';
 
 export const RSSLists = new Mongo.Collection('rsslists');
+
+// Template.registerHelper( 'scrapeFeed', (feed) {
+//   feedData = Scrape.feed feed;
+//   return Scrape.feed feed;
+// });

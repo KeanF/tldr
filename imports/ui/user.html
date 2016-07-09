@@ -9,7 +9,9 @@
     <ul class="nav navmenu-nav">
       <li><a href="#">Add subscriptions here</a></li>
       <li><a href="#">Show subscriptions here</a></li>
-      <li><a href="#">Button for deleting account here</a></li>
+      <li>
+        {{> deleteAcc}}
+      </li>
     </ul>
   </div>
 
@@ -37,4 +39,11 @@
       <p>This is where the cards should go.</p>
     </div><!-- /.container -->
   </div>
+</template>
+
+<template name="deleteAcc">
+  <a href="#">Delete Account</a>
+  <span>Email: </span>
+  <input type="text" placeholder="enter email to confirm" />
+  <input type="button" value="Delete" />
 </template>
