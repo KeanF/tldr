@@ -16,12 +16,30 @@ body {
   position: absolute;
   text-align: center;
   font-size: 100px;
-  /* Set size of our text */
+  /* Set size of our div */
   width: 480px;
   height: 150px;
-  /* Center text on page */
+  /* Center div on page */
   top: 50%;
   left: 50%;
   margin-top: -75px;
   margin-left: -240px;
+}
+
+/* Formatting our "page not found" */
+.notFoundDialog {
+  position: absolute;
+  text-align: center;
+  width: 1200px; /* Set the size of our div */
+  height: 250px;
+  top: 50%; /* Center div on page */
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -600px;
+}
+.nfTitle {
+  font-size: 100px;
+}
+.nfLink {
+  font-size: 70px;
 }

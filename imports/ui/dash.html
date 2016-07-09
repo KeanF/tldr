@@ -14,14 +14,9 @@
   {{/if}}
 </template>
 
-<!-- Template for loading page -->
-<template name="loadDialog">
-  <div class="loading">Loading...</div>
-</template>
-
 <!-- Template for login page -->
 <template name="login">
-    <h1 style="text-align: center; font-size:150px; font-family: Georgia;">
+    <h1 style="text-align: center; font-size:150px; font-family: Georgia; margin-top: 100px;">
         <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
     </h1>
     <div class="container">
@@ -29,7 +24,12 @@
     </div>
 </template>
 
-<!-- User interface if logged in -->
+<!-- Template for loading page -->
+<template name="loadDialog">
+  <div class="loading">Loading...</div>
+</template>
+
+<!-- User interface -->
 <template name="dash">    
   <head>
       <title>tl;dr</title>
@@ -41,8 +41,25 @@
   </body>
 </template>
 
-<!-- Settings template -->
+<!-- Settings -->
 <template name="settings">
   <a href="/" class="btn btn-default">Home</a>
   <p>This is settings...</p>
+</template>
+
+<!-- Not found page -->
+<template name="notFound">
+  <div id="notFound">
+    <h1 style="text-align: center; font-size:150px; font-family: Georgia; margin-top: 100px;">
+      <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
+    </h1>
+    <div class="notFoundDialog">
+      <div class="nfTitle">
+        Page not found!
+      </div>
+      <div class="nfLink">
+        <a href="/">Click here to return to the homepage</a>
+      </div>
+    </div>
+  </div>
 </template>
