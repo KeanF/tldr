@@ -217,8 +217,8 @@ body.details .pen-title-area .pen-title {
 }
 
 .main-header {
-  background: white;
-  border-bottom: 1px solid #DDDDDD;
+  background: black;
+  border-bottom: 1px solid #222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

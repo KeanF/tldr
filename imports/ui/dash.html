@@ -1,4 +1,6 @@
-<!-- Container for whether the user has signed in or not -->
+<!-- Holds all common templates for rendering our dashboard -->
+
+<!-- Container for whether user login verification -->
 <template name="dashboard">
   <!-- Show "loading" logging-in -->
   {{#if authInProcess}}
@@ -16,29 +18,17 @@
 
 <!-- Template for login page -->
 <template name="login">
-    <h1 style="text-align: center; font-size:150px; font-family: Georgia; margin-top: 100px;">
-        <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
-    </h1>
-    <div class="container">
-        {{> atForm}}
-    </div>
+  <h1 style="text-align: center; font-size:150px; font-family: Georgia; margin-top: 100px;">
+    <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
+  </h1>
+  <div class="container">
+    {{> atForm}}
+  </div>
 </template>
 
 <!-- Template for loading page -->
 <template name="loadDialog">
   <div class="loading">Loading...</div>
-</template>
-
-<!-- User interface -->
-<template name="dash">    
-  <head>
-      <title>tl;dr</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  </head>
-  <body id="top">
-    <a href="/settings" class="btn btn-default">Settings</a>
-    {{> atNavButton}}
-  </body>
 </template>
 
 <!-- Settings -->
@@ -50,13 +40,15 @@
 <!-- Not found page -->
 <template name="notFound">
   <div id="notFound">
-    <h1 style="text-align: center; font-size:150px; font-family: Georgia; margin-top: 100px;">
+    <h1 class="nfEmblem">
       <big>tl<strong><span style="color:#059BD8">;</span></strong>dr</big>
     </h1>
-    <div class="notFoundDialog">
+    <!-- Include some error information -->
+    <div class="nfDialog">
       <div class="nfTitle">
         Page not found!
       </div>
+      <!-- Allow user to return to home -->
       <div class="nfLink">
         <a href="/">Click here to return to the homepage</a>
       </div>

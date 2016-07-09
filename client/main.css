@@ -26,15 +26,29 @@ body {
   margin-left: -240px;
 }
 
-/* Formatting our "page not found" */
-.notFoundDialog {
+/**
+ * Formatting our "page not found"
+ * (manual CSS as we assume client is on desktop)
+ */
+.nfEmblem {
+  font-size: 150px;
+  font-family: Georgia;
+  position: absolute; /* Position to center of page */
+  text-align: center;
+  width: 360px;
+  height: 206px;
+  left: 50%;
+  margin-top: 80px;
+  margin-left: -180px;
+  
+}
+.nfDialog {
   position: absolute;
   text-align: center;
   width: 1200px; /* Set the size of our div */
   height: 250px;
-  top: 50%; /* Center div on page */
   left: 50%;
-  margin-top: -125px;
+  margin-top: 360px;
   margin-left: -600px;
 }
 .nfTitle {

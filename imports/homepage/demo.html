@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> tl;dr </title>
-  <link rel="stylesheet" type="text/css" href="mainpage.css" />
-  <style type="text/css">
-  </style>
-</head>
+  <head>
+    <title> tl;dr </title>
+    <link rel="stylesheet" type="text/css" href="mainpage.css" />
+  </head>
   <body>
   <!-- Header with the title and log out button -->
     <header class="main-header" id="main-header">
       <div class="header-chunk pen-title-area">
-        <div class="pen-title-text">
+        <div>
           <h1 id="pen-title" class="pen-title" class="titlefont">
             tl<strong class="bluecolon">;</strong>dr
+            <span class="by">
+              News for when you don't have time for it
+            </span>
           </h1>
-          <div class="by">
-            News for when you don't have time for it
-          </div>
         </div>
       </div>
       <div class="header-chunk primary-actions secondary-nav">
@@ -28,9 +26,9 @@
           </form>
         </div>
       </div>
-    </header>
+  </header>
 <!-- Side bar that lets the user access settings -->
-    <div id="mySidenav" class="sidenav">
+  <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closebutton">&#x2715;</a>
       <h1 class="settings">Settings</h1>
       <a>Add Feed</a>
@@ -87,6 +85,6 @@
   <div id="main">
     <span class="openside" onclick="openNav()">&#8801;</span>
   </div>
-  <script type="text/javascript" src="mainpage.js"></script>
+    <script type="text/javascript" src="mainpage.js"></script>
   </body>
 </html>

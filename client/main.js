@@ -3,4 +3,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout'
 
 // Include approrpiate routing information to the UI
 import '/imports/ui/dash.js';
-import '/imports/startup/client'
+import '/imports/startup/client';
+
+// Import stuff for user.ui
+import '/public/js/mainpage.js';
