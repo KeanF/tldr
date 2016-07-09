@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> tl;dr </title>
+  <link rel="stylesheet" type="text/css" href="mainpage.css" />
+  <style type="text/css">
+  </style>
+</head>
+  <body>
+  <!-- Header with the title and log out button -->
+    <header class="main-header" id="main-header">
+      <div class="header-chunk pen-title-area">
+        <div class="pen-title-text">
+          <h1 id="pen-title" class="pen-title" class="titlefont">
+            tl<strong class="bluecolon">;</strong>dr
+          </h1>
+          <div class="by">
+            News for when you don't have time for it
+          </div>
+        </div>
+      </div>
+      <div class="header-chunk primary-actions secondary-nav">
+        <div class="header-chunk view-switcher-area">
+          <form action="demo.html" method="post" class="logout">
+            <button class="button button-editor-solid view-switcher-button" data-dropdown="#view-switcher" id="view-switcher-button" name="button" value="students">
+              Log Out
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+<!-- Side bar that lets the user access settings -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closebutton">&#x2715;</a>
+      <h1 class="settings">Settings</h1>
+      <a>Add Feed</a>
+      <div id="tfheader">
+        <form id="tfnewsearch" method="get" action="http://www.google.com">
+                <input type="text" class="tftextinput" name="q" size="25" maxlength="120">
+                <button class="button button-editor-solid view-switcher-button" data-dropdown="#view-switcher" id="view-switcher-button" name="button" value="students">
+              Add
+            </button>
+        </form>
+      <div class="tfclear"></div>
+      </div>
+      <a id="managefeeds">Manage Feeds</a>
+      <table class="tablesettings">
+        <tr>
+          <th>Title</th>
+          <th>RSS</th> 
+          <th>Delete</th>
+        </tr>
+        <tr>
+          <td>Washington Post</td>
+          <td>https://www.washingtonpost.com/rss-feeds/2014/08/04/ab6f109a-1bf7-11e4-ae54-0cfe1f974f8a_story.html</td> 
+          <td>
+            <button class="button button-editor-solid view-switcher-button" data-dropdown="#view-switcher" id="view-switcher-button" name="button" value="students">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>New York Times</td>
+          <td>http://www.nytimes.com/services/xml/rss/index.html</td> 
+           <td>
+            <button class="button button-editor-solid view-switcher-button" data-dropdown="#view-switcher" id="view-switcher-button" name="button" value="students">Delete</button>
+          </td>
+        </tr>
+      </table>
+      <button class="deleteaccount" data-dropdown="#view-switcher" id="view-switcher-button" name="button" value="students" id="deleteaccount">Delete Account</button>
+  </div>
+
+  <div id="div">
+    <table>
+      <table class="cardtable" id="tableborder">
+        <tr>
+          <th>Website</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+        </tr>
+      </table>
+    </table>
+  </div>
+
+  <div id="main">
+    <span class="openside" onclick="openNav()">&#8801;</span>
+  </div>
+  <script type="text/javascript" src="mainpage.js"></script>
+  </body>
+</html>
