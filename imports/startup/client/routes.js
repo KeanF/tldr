@@ -9,16 +9,17 @@ FlowRouter.route('/', {
   }
 });
 
-// Temporary rss feed playground
-FlowRouter.route('/rss', {
-  action: function () {
-    BlazeLayout.render("rssFeed", {});
-  }
-});
-
 // Route to 404 page if we access a page that doesn't exist
 FlowRouter.notFound = {
   action: function () {
     BlazeLayout.render("dashboard", {content: "notFound"});
   }
 }
+
+// Temporary rss feed playground
+// (to be implemented in a future release)
+// FlowRouter.route('/rss', {
+//   action: function () {
+//     BlazeLayout.render("rssFeed", {});
+//   }
+// });

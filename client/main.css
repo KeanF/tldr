@@ -54,10 +54,12 @@ body > div {
 }
 
 /* Settings panel settings */
+div > .navmenu {
+  width: 340px;
+}
 .navmenu, .navmenu-fixed-left {
   z-index: 1;
 }
-
 .navmenu > .navmenu-brand {
   margin-top: 30px;
   margin-bottom: 0px;
@@ -66,6 +68,9 @@ body > div {
   height: 80px;
   width: 155px;
   font-size: 40px;
+}
+.deleteAcc {
+  padding: 10px 15px 10px 15px;
 }
 
 /* RSS feed settings */
