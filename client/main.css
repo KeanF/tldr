@@ -1,3 +1,10 @@
+.managetable{
+  width:100%;
+  position:relative;
+  left:10px;
+}
+
+
 html, body {
   height: 100%;
 }
