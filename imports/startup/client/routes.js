@@ -4,15 +4,15 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 
 // Will render our user panel iff logged in
 FlowRouter.route('/', {
-    action: function () {
-        BlazeLayout.render("dashboard", {content: "dash"});
-    }
+  action: function () {
+    BlazeLayout.render("dashboard", {content: "userdash"});
+  }
 });
 
-// Route whether we're configuring settings or not
-FlowRouter.route('/settings', {
+// Temporary rss feed playground
+FlowRouter.route('/rss', {
   action: function () {
-    BlazeLayout.render("dashboard", {content: "settings"});
+    BlazeLayout.render("rssFeed", {});
   }
 });
 

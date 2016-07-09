@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 html {
     overflow-y: scroll;
 }
@@ -11,16 +15,69 @@ body {
     background-color: #FFFFFF;
 }
 
-/* NavBar settings */
+/* Make _blaze-root occupy entire page */
+body > div {
+  height: 100%;
+  width: 100%;
+}
 
+/* NavBar settings */
+.navbar {
+  height: 46px;
+}
+/* Logout button for our navbar */
+.logoutButton {
+  display: block;
+  float: right;
+  margin: 8px;
+}
+#at-nav-button {
+  margin: 0;
+}
+/* Some flavour text*/
+.navText {
+  text-align: center;
+  font-size: 20px;
+  height: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 /* Toggle button for our settings panel */
 .navbar-toggle {
   display: block; /* Make sure button is leftmost and has right margins */
   float: left;
   margin: 8px;
+  margin-left: 15px;
 }
 .navbar-collapse.collapse {
   display: none !important; /* Make sure button always shows */
+}
+
+/* Settings panel settings */
+.navmenu, .navmenu-fixed-left {
+  z-index: 1;
+}
+
+.navmenu > .navmenu-brand {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  height: 80px;
+  width: 155px;
+  font-size: 40px;
+}
+
+/* RSS feed settings */
+.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  padding: 50px 0 0 0;
+  background: #fff;
 }
 
 /* Formatting our page loading dialog */
